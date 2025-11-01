@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link rel=stylesheet href="{{url_for('static',filename='tyylit.css')}}">
+</head>
+<body>
+	<h1>Mitä teet mielivaltaiselle luvulle!?</h1>
+<!--	<form method=GET action=vastaus>
+		<input type=text name="nimi">
+		<input type=checkbox name="moi" value="Moi sullekin! (Checkboxaaja ;-)">
+		<input type=submit value="Lähetä">
+	</form>  -->
+	<form method=GET action=vastaus>
+	<input type=number name="num">
+	<select name="op">
+	<option value="p">Lisää</option>
+	<option value="m">Vähennä</option>
+	<option value="t">Kerro</option>
+	</select>
+	<input type=submit value="Lähetä">
+	</form>
+</body>
+</html>
